@@ -4,10 +4,9 @@
 
 @font-face {
     font-family: 'Yekan';
-    src: url(./B_Yekan/B_Yekan/Yekan.ttf);
+    src: url(./vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.ttf);
 }
 
 #app{
     font-family: 'Yekan';
-    font-weight: 100;
 }

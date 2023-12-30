@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <div dir="rtl" className="bg-silver h-full" id="app">
       <Navbar />
-      <div className="flex justify-center">
-        <div className="col-span-2">
+      <div className="flex justify-center mt-12">
+        <div>
           <Sidebar />
           </div>
-        <div className="col-span-1">
+        <div>
           <Hotel />
         </div>
       </div>
