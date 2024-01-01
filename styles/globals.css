@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Yekan';
-    src: url(./B_Yekan/B_Yekan/Yekan.ttf);
+    font-family: 'Samim';
+    src: url(./samim/Samim-Bold.ttf);
 }
 
 #app{
-    font-family: 'Yekan';
-    font-weight: 100;
+    font-family: 'Samim';
 }
+
+@media only screen and (max-width: 480px) {
+        body{
+            
+        }
+}
+
