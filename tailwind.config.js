@@ -15,9 +15,17 @@ module.exports = {
       blue: '#0d5ab9',
       blue2:'#043d89',
       white: '#fff',
-      black: '#000000'
+      black: '#000000',
+      gray: '#d9d9d9',
+      green : '#1f7d57'
     },
-    extend: {},
+    extend: {      
+      spacing: {
+        '13': '3.25rem',
+        '15': '3.75rem',
+        '128': '32rem',
+        '144': '36rem',
+      }},
   },
   plugins: [],
 }
