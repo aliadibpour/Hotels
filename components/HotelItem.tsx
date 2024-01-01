@@ -6,16 +6,16 @@ export default function HotelItem() {
     return (
         <div>
 
-            <div className="grid grid-cols-3 h-42 gap-3 w-11/12 mr-7 overflow-hidden rounded-md bg-white max-sm:grid-cols-1 max-sm:ml-6">
+            <div className="grid grid-cols-3 h-42 gap-3 w-11/12 mr-7 overflow-hidden rounded-md bg-white max-sm:grid-cols-1 max-sm:ml-20 max-sm:rounded-xl">
 
-<div className="">
-    <Image src={pic} alt="Product Image" className="object-cover h-full" width={300} />
-</div>
+                <div className="">
+                    <Image src={pic} alt="Product Image" className="object-cover h-full max-sm:w-full" width={300} />
+                </div>
 
-<div className="mt-6 ">
+                <div className="mt-6 ">
                     <p className="text-gray-700">هتل بین المللی قصر مشهد</p>
                     <p className='text-xs'>مشهد، خیابان امام رضا(ع)، بین امام رضا 4 و 6</p>
-</div>
+                </div>
 
                 <div className="text-left max-sm:text-start p-5">
                     <p className='text-xs bg-green inline text-white p-1 rounded-xl'>20% تخفیف</p>
@@ -25,14 +25,14 @@ export default function HotelItem() {
                     </div>
                     <p className='text-xs mb-3 opacity-70'>شروع قیمت برای هر یک شب</p>
                     
-                    <button type='button' className="flex float-end bg-blue hover:bg-blue2 w-48 text-white p-3 rounded-md mt-10 max-sm:w-full max-sm:mr-0 max-sm:text-center
-                     max-sm:mt-6">
+                    <button type='button' className="flex float-end justify-center bg-blue2 text-sm  tarnslation-all duration-200 hover:bg-blue
+                     w-48 text-white p-3 rounded-md mt-10 max-sm:w-full max-sm:mr-0 max-sm:mt-6">
                         مشاهده اتاق ها
                     <ArrowLeft />
                     </button>
                     </div>
-                </div>
-                </div>
+            </div>
+        </div>
 
     )
 }

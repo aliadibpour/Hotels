@@ -31,7 +31,7 @@ export default function Navbar() {
                 </div>
 
                 <select id="small" className="w-72 p-2 rounded-md max-md:w-full max-md:h-14
-                 text-sm borderrounded-lg bg-gray-50 focus:ring-silver focus:border-blue dark:text-white dark:focus:ring-black dark:focus:border-black
+                 text-sm borderrounded-lg bg-gray-50 focus:ring-silver focus:border-blue dark:text-white dark:focus:ring-black 
                  max-xl:ml-8 max-lg:w-full"
                  style={{border:'solid 1px gray'}} >
                     <option selected>اولویت</option>

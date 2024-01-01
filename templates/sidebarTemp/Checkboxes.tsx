@@ -10,7 +10,7 @@ const h: React.FC<user> = props => {
         <>
             <div className="p-2">
             <input type="checkbox" className="cursor-pointer size-4" />
-                <label className="mr-2">{data}</label>
+                <label className="mr-2 opacity-75">{data}</label>
             </div>
         </>
     )
