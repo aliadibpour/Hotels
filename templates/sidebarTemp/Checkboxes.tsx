@@ -8,9 +8,9 @@ const h: React.FC<user> = props => {
     const {data} = props;
     return (
         <>
-            <div>
-            <input type="checkbox" />
-                <label className="text-xs">{data}</label>
+            <div className="p-2">
+            <input type="checkbox" className="cursor-pointer size-4" />
+                <label className="mr-2">{data}</label>
             </div>
         </>
     )
