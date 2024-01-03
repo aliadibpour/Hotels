@@ -7,6 +7,7 @@ import { useState } from "react"
 export default function Home() {
   const [filter,setfilter] = useState<boolean>(false)
   return (
+    <div className="relative">
     <div dir="rtl" className={`bg-silver h-full `} id="app">
       <Navbar />
       <div className="flex justify-center mt-12">
@@ -17,8 +18,10 @@ export default function Home() {
           <HotelItem />
         </div>
       </div>
-      <button onClick={e => setfilter(!filter)} className=" opacity-0 max-lg:bg-blue max-lg:text-white max-lg:p-3
+      <button onClick={e => setfilter(!filter)} className="hidden max-lg:inline max-lg:bg-blue max-lg:text-white max-lg:p-3
        max-lg:rounded max-lg:opacity-100 max-lg:fixed max-lg:bottom-5 max-lg:right-1/2">فیلتر</button>
-   </div>
+      </div>
+      <div className={`hidden max-lg:${filter && 'block'} bg-black h-full absolute top-0 w-full z-10 opacity-50`} onClick={e => setfilter(!filter)}></div>
+      </div>
   )
 }

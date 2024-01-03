@@ -22,9 +22,9 @@ const Sidebar: React.FC<ftype> = ({filter}) => {
     const [residenceType, setresidenceType] = useState<string[]>(['هتل آپارتمان', 'هتل'])
     return (
         <>
-            <div className={`h-full w-72 mr-9 mb-5 relative grid grid-cols-1 max-lg:bg-white max-lg:fixed max-lg:top-0 max-lg:overflow-y-scroll 
+            <div className={`h-full w-72 mr-14 mb-5 relative grid grid-cols-1 max-lg:bg-white max-lg:fixed max-lg:top-0 max-lg:overflow-y-scroll 
             transition-all duration-400 max-md:w-1/2 max-sm:w-11/12 text-sm
-            max-lg:h-screen ${filter ? 'max-lg:-right-10'  : 'max-lg:-right-144 max-sm:-right-144' }  z-10`} style={{ border: '1px #d9d9d9 solid' }}>
+            max-lg:h-screen ${filter ? 'max-lg:-right-14'  : 'max-lg:-right-144 max-sm:-right-150' }  z-20`} style={{ border: '1px #d9d9d9 solid' }}>
                 <div className="p-2">
                 <SearchHotelName />
                 </div>
@@ -47,7 +47,7 @@ const Sidebar: React.FC<ftype> = ({filter}) => {
                     <Stars/>
                 </div>
                 <hr className="text-gray mr-3 ml-3"/>
-                <p>امکانات</p>
+                <p className="p-2">امکانات</p>
                 <div className="p-2">
                 {
                     fechers.map(item => <Checkboxes data={item} />)
@@ -55,14 +55,14 @@ const Sidebar: React.FC<ftype> = ({filter}) => {
                     </div>
                 <hr className="text-gray mr-3 ml-3"/>
                 <div>
-                    <p>امتیاز مهمان ها</p>
+                    <p className="p-2">امتیاز مهمان ها</p>
                     {
                         Guestpoints.map(item => <Checkboxes data={item} />)
                     }
                 </div>
                 <div>
                     <hr className="text-gray mr-3 ml-3"/>
-                    <p>نوع اقامتگاه</p>
+                    <p className="p-2">نوع اقامتگاه</p>
                     {
                         residenceType.map(item => <Checkboxes data={item} />)
                     }
