@@ -21,7 +21,7 @@ export default function Home() {
       <button onClick={e => setfilter(!filter)} className="hidden max-lg:inline max-lg:bg-blue max-lg:text-white max-lg:p-3
        max-lg:rounded max-lg:opacity-100 max-lg:fixed max-lg:bottom-5 max-lg:right-1/2">فیلتر</button>
       </div>
-      <div className={`hidden max-lg:${filter && 'block'} bg-black h-full absolute top-0 w-full z-10 opacity-50`} onClick={e => setfilter(!filter)}></div>
+      <div className={`max-lg:${filter &&'block bg-black h-full absolute top-0 w-full z-10 opacity-50' }`} onClick={e => setfilter(!filter)}></div>
       </div>
   )
 }
