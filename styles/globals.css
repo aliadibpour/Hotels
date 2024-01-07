@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Samim';
+    src: url(./samim/Samim-Bold.ttf);
+}
+
+#app{
+    font-family: 'Samim';
+}
+
+@media only screen and (max-width: 480px) {
+        body{
+            
+        }
+}
+
