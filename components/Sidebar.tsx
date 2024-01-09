@@ -62,7 +62,7 @@ const Sidebar: React.FC<ftype> = ({filter}) => {
                 </div>
                 <div>
                     <hr className="text-gray mr-3 ml-3"/>
-                    <p className="p-2">نوع اقامتگاه</p>
+                    <p className="p-2">نوع اقامتگاه</p><p>s</p>
                     {
                         residenceType.map(item => <Checkboxes data={item} />)
                     }
